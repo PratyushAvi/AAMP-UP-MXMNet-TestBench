@@ -1,0 +1,12 @@
+rdkit-pypi
+numpy
+scikit-learn
+scipy
+sympy
+torch
+torchvision
+torch_scatter
+torch_sparse
+torch_cluster
+torch-geometric
+git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
