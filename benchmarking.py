@@ -221,9 +221,9 @@ plt.plot(e_x, train_MAEs, label = 'Training', color = 'blue')
 plt.plot(e_x, valid_MAEs, label = 'Validation', color = 'green')
 plt.plot(e_x, test_MAEs, label = 'Testing', color = 'red')
 plt.legend()
-plt.savefig('../notes/benchmarks/graphs/%s_%.2f_%d_%d_graph.png' % (targets[args.target], SET_SCALE * 100, my_epochs, SET_RUNTIME))
+plt.savefig('./benchmarks/graphs/%s_%.2f_%d_%d_graph.png' % (targets[args.target], SET_SCALE * 100, my_epochs, SET_RUNTIME))
 
-with open('../notes/benchmarks/csvs/%s_%.2f_%d_%d_graph_data.csv' % (targets[args.target], SET_SCALE * 100, my_epochs, SET_RUNTIME), 'w', newline='') as file:
+with open('./benchmarks/csvs/%s_%.2f_%d_%d_graph_data.csv' % (targets[args.target], SET_SCALE * 100, my_epochs, SET_RUNTIME), 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['train_MAEs', 'valid_MAEs', 'test_MAEs'])
     for i in range(my_epochs):
